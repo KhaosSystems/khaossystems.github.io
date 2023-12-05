@@ -1,14 +1,51 @@
 <DOCTYPE html>
+
     <head>
         <title>Snap scroll with CSS | Full Page Scrolling Effects</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+            integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
     </head>
+
     <body>
         <div class="logo"></div>
         <div class="main">
-            <div class="section" style="background: black;"></div>
-            <div class="section" style="background: orangered;"></div>
+            <div class="section" style="background: orange;"></div>
+            <div class="section" style="background: black;">
+                <div class="accordion-container" style="padding-right: 180px;">
+
+                    <div class="accordion-item"
+                        style="background-image: url('https://images.squarespace-cdn.com/content/v1/51035a85e4b0362cedee02c7/1632242891903-DWZNGYNDH8MZQ6U4RT4Y/GhostofTsushimaDC_FunesRefuge02_IanJunWeiChiew.jpg?format=2500w');">
+                        <div class="label">Service 1</div>
+                    </div>
+                    <div class="accordion-item accordion-item-expanded"
+                        style="background-image: url('https://images.squarespace-cdn.com/content/v1/51035a85e4b0362cedee02c7/1596162943375-UOG5DGYDCFJFGFB8JBIX/GhostofTsushima_Castle_Shimura_Wide_IanJunWeiChiew.jpg?format=1500w');">
+                        <div class="label">Service 2</div>
+
+                    </div>
+                    <div class="accordion-item"
+                        style="background-image: url('https://images.squarespace-cdn.com/content/v1/51035a85e4b0362cedee02c7/1596162866699-G4IWCQDR1LP9LSECV5W6/GhostofTsushima_Adachi_Estate_IanJunWeiChiew.jpg?format=2500w');">
+                        <div class="label">Service 3</div>
+
+                    </div>
+                    <div class="accordion-item"
+                        style="background-image: url('https://images.squarespace-cdn.com/content/v1/51035a85e4b0362cedee02c7/1596162952540-KJ7HPM0262J82KVHX2C8/GhostofTsushima_Charred_Lands_01_IanJunWeiChiew.jpg?format=2500w');">
+                        <div class="label">Service 4</div>
+
+                    </div>
+                </div>
+            </div>
             <div class="section" style="background: blueviolet;"></div>
         </div>
+
+        <script>
+            // When an item is clicked.
+            $('.accordion-item').on('click', function () {
+                // Remove expanded class from all siblings.
+                $(this).siblings('.accordion-item').removeClass('accordion-item-expanded');
+                // Add expanded class to the clicked items.
+                $(this).addClass('accordion-item-expanded');
+            })
+        </script>
     </body>
 </DOCTYPE>
