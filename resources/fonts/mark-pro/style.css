@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'FFMarkPro-Black';
+    src: url('./FontFont_FF.Mark.Pro.Black.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'FFMarkPro-Bold-Italic';
+    src: url('./FontFont_FF.Mark.Pro.Bold.Italic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'FFMarkPro-Bold';
+    src: url('./FontFont_FF.Mark.Pro.Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'FFMarkPro-Hairline';
+    src: url('./FontFont_FF.Mark.Pro.Hairline.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'FFMarkPro-Heavy-Italic';
+    src: url('./FontFont_FF.Mark.Pro.Heavy.Italic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'FFMarkPro-Heavy';
+    src: url('./FontFont_FF.Mark.Pro.Heavy.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'FFMarkPro-Medium-Italic';
+    src: url('./FontFont_FF.Mark.Pro.Medium.Italic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'FFMarkPro-Medium';
+    src: url('./FontFont_FF.Mark.Pro.Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'FFMarkPro-Regular';
+    src: url('./FontFont_FF.Mark.Pro.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'FFMarkPro-Thin-Italic';
+    src: url('./FontFont_FF.Mark.Pro.Thin.Italic.otf') format('opentype');
+}
