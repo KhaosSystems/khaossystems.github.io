@@ -4,25 +4,68 @@
         <title>Snap scroll with CSS | Full Page Scrolling Effects</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="resources/fonts/mark-pro/style.css">
-        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
-            integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <div class="logo"></div>
         <div class="main">
             <!-- Landing page -->
-            <div class="section" style="position: relative; background-image: url('resources/images/concept-1.png'); background-position: center;">
+            <div class="section"
+                style="position: relative; background-image: url('resources/images/concept-1.png'); background-position: center;">
                 <img src="resources/images/logo-text.svg" style="margin: 50px; height: 75px;">
                 <div style="position: absolute; bottom: 0; margin: 100px;">
                     <img src="resources/images/down-arrow.svg" width="125px" height="125px"><br>
-                    <div style="font-family: 'FFMarkPro-Black'; color: #FF8717; font-size: 10rem; line-height: 100%; letter-spacing: 15px; margin-top: 50px;">WORK<br>WITH US</div>
+                    <div
+                        style="font-family: 'FFMarkPro-Black'; color: #FF8717; font-size: 10rem; line-height: 100%; letter-spacing: 15px; margin-top: 50px;">
+                        WORK<br>WITH US</div>
                 </div>
             </div>
 
             <!-- Services page -->
-            <div class="section" style="background: black;">
-                <div class="accordion-container" style="padding-right: 180px;">
+            <div class="section" style="position: relative; background: black;">
+                <div style="position: absolute;  z-index: 1; padding: 40px;">
+                    <a onclick="$('#service-container').animate({left: '0%'}, 500);"
+                        style="float: left; font-family: 'FFMarkPro-Regular'; font-size: 1rem; color: white; border-bottom: solid 2px; margin-right: 1rem; letter-spacing: 2px; margin: 0px 10px; padding-bottom: 7px;">&nbsp;GAME
+                        DEVELOPMENT&nbsp;</a>
+                    <a onclick="$('#service-container').animate({left: '-100%'}, 500);"
+                        style="float: left; font-family: 'FFMarkPro-Regular'; font-size: 1rem; color: #FF8717; border-bottom: solid 2px; margin-right: 1rem; letter-spacing: 2px; margin: 0px 10px; padding-bottom: 7px;">&nbsp;PIPELINE
+                        & TOOLS&nbsp;</a>
+                    <a onclick="$('#service-container').animate({left: '-200%'}, 500);"
+                        style="float: left; font-family: 'FFMarkPro-Regular'; font-size: 1rem; color: white; border-bottom: solid 2px; margin-right: 1rem; letter-spacing: 2px; margin: 0px 10px; padding-bottom: 7px;">&nbsp;PORTING&nbsp;</a>
+                    <a onclick="$('#service-container').animate({left: '-300%'}, 500);"
+                        style="float: left; font-family: 'FFMarkPro-Regular'; font-size: 1rem; color: white; border-bottom: solid 2px; margin-right: 1rem; letter-spacing: 2px; margin: 0px 10px; padding-bottom: 7px;">&nbsp;CONSULTING&nbsp;</a>
+                </div>
+
+
+                <div class="service-container" id="service-container"
+                    style="position: absolute; top: 0; left: 0;  z-index: 0; width: 400%; height: 100%;">
+                    <div class="service-item"
+                        style="position: relative; float: left; width: 25%; height: 100%; background-size: cover; background-image: url('resources/images/concept-1.png');">
+                        <div style="position: absolute; bottom: 0; left: 0;">Text
+                            <div>
+                                We offer comprehensive support to facilitate the development of your demo, create a
+                                vertical slice, or accelerate the production of your game!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-item"
+                        style="position: relative; float: left; width: 25%; height: 100%; background-size: cover; background-image: url('resources/images/concept-2.png');">
+                        <div style="bottom: 0; left: 0;">Text</div>
+                    </div>
+
+                    <div class="service-item"
+                        style="position: relative; float: left;  width: 25%; height: 100%; background-size: cover; background-image: url('resources/images/concept-3.png');">
+                        <div style="bottom: 0; left: 0;">Text</div>
+                    </div>
+                </div>
+
+                <script>
+                    
+                </script>
+
+                <!--<div class="accordion-container" style="padding-right: 180px;">
                     <div class="accordion-item accordion-item-compressed"
                         style="background-image: url('resources/images/concept-1.png');">
                         <div class="label">Service 1</div>
@@ -39,33 +82,38 @@
                         style="background-image: url('resources/images/concept-1.png');">
                         <div class="label">Service 4</div>
                     </div>
-                </div>
+                </div>-->
             </div>
 
             <!-- Contact page -->
-            <div class="section" style="position: relative; background-image: url('resources/images/concept-3.png'); background-position: center;">
+            <div class="section"
+                style="position: relative; background-image: url('resources/images/concept-3.png'); background-position: center;">
                 <img src="resources/images/logo-text.svg" style="margin: 50px; height: 75px;">
 
                 <!-- Let's get in touch -->
-                <div style="position: absolute; bottom: 6rem; margin: 50px; font-family: 'FFMarkPro-Black'; color: #FF8717; font-size: 6rem; line-height: 100%; letter-spacing: 15px; margin-top: 50px;">
+                <div
+                    style="position: absolute; bottom: 6rem; margin: 50px; font-family: 'FFMarkPro-Black'; color: #FF8717; font-size: 6rem; line-height: 100%; letter-spacing: 15px; margin-top: 50px;">
                     LET'S GET<br>IN TOUCH
                 </div>
-            
+
                 <!-- Contact information -->
-                <div style="position: absolute; bottom: 0; margin: 50px; font-family: 'FFMarkPro-Regular'; color: #FFFFFF; font-size: 1.2rem; line-height: 150%; letter-spacing: 2px; margin-top: 50px;">
+                <div
+                    style="position: absolute; bottom: 0; margin: 50px; font-family: 'FFMarkPro-Regular'; color: #FFFFFF; font-size: 1.2rem; line-height: 150%; letter-spacing: 2px; margin-top: 50px;">
                     <div style="float: left; margin-right: 2rem;">
                         Khaos Systems ApS<br>
                         DK-44205386
                     </div>
 
-                    <div style="float: left; width: 4px; height: 50px; transform: skew(20deg); background: #FF8717;"></div>
+                    <div style="float: left; width: 4px; height: 50px; transform: skew(20deg); background: #FF8717;">
+                    </div>
 
                     <div style="float: left; margin-right: 2rem; margin-left: 2rem;">
                         Kasernevej 8<br>
                         8800 Viborg, Denmark
                     </div>
 
-                    <div style="float: left; width: 4px; height: 50px; transform: skew(20deg); background: #FF8717;"></div>
+                    <div style="float: left; width: 4px; height: 50px; transform: skew(20deg); background: #FF8717;">
+                    </div>
 
                     <div style="float: left; margin-left: 2rem;">
                         (+45) 61 28 93 41<br>
@@ -74,17 +122,5 @@
                 </div>
             </div>
         </div>
-
-        <script>
-            // When an item is clicked.
-            $('.accordion-item').on('click', function () {
-                // Remove expanded class from all siblings.
-                $(this).siblings('.accordion-item').removeClass('accordion-item-expanded');
-                $(this).siblings('.accordion-item').addBack('accordion-item-compressed');
-                // Add expanded class to the clicked items.
-                $(this).addClass('accordion-item-expanded');
-                $(this).removeClass('accordion-item-compressed');
-            })
-        </script>
     </body>
 </DOCTYPE>

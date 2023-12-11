@@ -34,7 +34,6 @@ body {
     filter: drop-shadow(0px 0px 3rem black);
 }
 
-
 *{
 	box-sizing: border-box;
 }
@@ -55,7 +54,7 @@ body {
     margin-right: 2px;
 
     background: #070707;
-    transition: width 500ms;
+    transition: width 1000ms;
     cursor: pointer; 
     background-position: left;
     background-size: auto 100%;
@@ -76,5 +75,6 @@ body {
 }
 
 .accordion-item-compressed {
+    background-image: none !important;
     background-color: #FF8717 !important;
 }
